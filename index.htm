@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription à la Salle de Sport</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Inscription à la Salle de Sport</h1>
+
+        <label for="nom">Nom :</label><br>
+        <input type="text" name="nom" id="nom" placeholder="Votre nom">
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" name="prenom" id="prenom" placeholder="Votre prénom">
+        <label for="horaire">Horaire préféré :</label><br>
+        <select name="horaire" id="horaire">
+            <option value="null" selected disabled>-- Selectionnez un horaire --</option>
+        </select>
+        <label for="condition">Conditions médicales (si applicable) :</label><br>
+        <textarea name="condition" id="condition" placeholder="Indiquez toute condition médicale pertinente"></textarea>
+        
+        <button onclick="inscrire()">S'inscrire</button>
+        <button onclick="sauvegarder()">sauvegarder</button>
+
+        <table >
+            <thead>
+                <tr>
+                    <td>Nom</td>
+                    <td>Prénom</td>
+                    <td>Horaire</td>
+                    <td>Conditions Médicales</td>
+                    <td>Actions</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+</body>
+<script src="script.js"></script>
+</html>
